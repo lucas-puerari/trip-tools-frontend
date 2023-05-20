@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --dir src",
+    "lint:fix": "next lint --dir src --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "eslint": "8.41.0",
@@ -14,5 +16,8 @@
     "next": "13.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
   }
 }
